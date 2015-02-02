@@ -1,0 +1,53 @@
+/*
+Sass::SyntaxError: You may not @extend an outer selector from within @media.
+You may only @extend selectors within the same directive.
+From "@extend .wrapper" on line 136 of /Users/michael/SDRuby/magic-nights/octopress/sass/_structure.scss.
+
+
+Backtrace:
+/Users/michael/SDRuby/magic-nights/octopress/sass/_structure.scss:1
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.4.11/lib/sass/selector/simple_sequence.rb:327:in `check_directives_match!'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.4.11/lib/sass/selector/simple_sequence.rb:198:in `block (2 levels) in do_extend'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.4.11/lib/sass/selector/simple_sequence.rb:198:in `each'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.4.11/lib/sass/selector/simple_sequence.rb:198:in `block in do_extend'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.4.11/lib/sass/selector/simple_sequence.rb:188:in `map!'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.4.11/lib/sass/selector/simple_sequence.rb:188:in `do_extend'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.4.11/lib/sass/selector/sequence.rb:112:in `block in do_extend'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.4.11/lib/sass/selector/sequence.rb:110:in `map'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.4.11/lib/sass/selector/sequence.rb:110:in `do_extend'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.4.11/lib/sass/selector/comma_sequence.rb:71:in `block in do_extend'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.4.11/lib/sass/selector/comma_sequence.rb:70:in `map'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.4.11/lib/sass/selector/comma_sequence.rb:70:in `do_extend'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.4.11/lib/sass/tree/visitors/extend.rb:44:in `visit_rule'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.4.11/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.4.11/lib/sass/tree/visitors/extend.rb:28:in `visit'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.4.11/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.4.11/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.4.11/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.4.11/lib/sass/tree/visitors/extend.rb:37:in `visit_children'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.4.11/lib/sass/tree/visitors/base.rb:38:in `visit'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.4.11/lib/sass/tree/visitors/extend.rb:28:in `visit'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.4.11/lib/sass/tree/visitors/extend.rb:15:in `visit'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.4.11/lib/sass/tree/root_node.rb:39:in `css_tree'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.4.11/lib/sass/tree/root_node.rb:20:in `render'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.4.11/lib/sass/engine.rb:268:in `render'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.4.11/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.4.11/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.4.11/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.4.11/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-1.0.3/lib/compass/sass_compiler.rb:40:in `compile!'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-1.0.3/lib/compass/commands/update_project.rb:49:in `perform'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-1.0.3/bin/compass:44:in `call'
+/Users/michael/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
+/Users/michael/.rbenv/versions/2.0.0-p247/bin/compass:23:in `load'
+/Users/michael/.rbenv/versions/2.0.0-p247/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Sass::SyntaxError: You may not @extend an outer selector from within @media.\A You may only @extend selectors within the same directive.\A From \"@extend .wrapper\" on line 136 of /Users/michael/SDRuby/magic-nights/octopress/sass/_structure.scss.\A "; }
